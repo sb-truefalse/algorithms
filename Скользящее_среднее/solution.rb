@@ -18,7 +18,7 @@ def simple_algorithm(timeseries, k)
 end
 
 # Метод двух указателей
-def optimized_algorithm(timeseries, k)
+def tpm_optimized_algorithm(timeseries, k)
   result = []
 
   sum = 0

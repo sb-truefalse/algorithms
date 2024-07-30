@@ -37,7 +37,6 @@ def tpm_optimized_algorithm(numbers, x)
   return [nil, nil]
 end
 
-
 # Доп. память (хеш-таблица)
 def map_optimized_algorithm(numbers, x)
   map = {}

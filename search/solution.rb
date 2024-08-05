@@ -28,3 +28,11 @@ def binary_algorithm(list, x)
 
   -1
 end
+
+
+def test
+	list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	x = 10
+	puts(linear_algorithm(list, x) == 9)
+	puts(binary_algorithm(list, x) == 9)
+end

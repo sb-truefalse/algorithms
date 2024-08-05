@@ -3,6 +3,7 @@ package main
 /* Поиск */
 
 import (
+	"fmt"
 	"sort"
 )
 
@@ -35,6 +36,13 @@ func binaryAlgorithm(list []int, x int) int {
 	}
 
 	return -1
+}
+
+func test() {
+	list := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	x := 10
+	fmt.Println(linearAlgorithm(list, x) == 9)
+	fmt.Println(binaryAlgorithm(list, x) == 9)
 }
 
 func main() {

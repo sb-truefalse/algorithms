@@ -46,3 +46,11 @@ def map_optimized_algorithm(numbers, x)
 
   return [nil, nil]
 end
+
+def test
+	list = [1, 2, 3, 4, 5, 6, 7, 9, 10]
+	x = 5
+	puts simple_algorithm(list, x).join(' ')
+	puts tpm_optimized_algorithm(list, x).join(' ')
+	puts map_optimized_algorithm(list, x).join(' ')
+end

@@ -34,3 +34,9 @@ def tpm_optimized_algorithm(timeseries, k)
 
   result
 end
+
+def test
+  data = [1, 2, 3, 4, 5, 6]
+  puts simple_algorithm(data, 3)
+  puts tpm_optimized_algorithm(data, 3)
+end

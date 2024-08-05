@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# Скользящее среднее
+# Moving average
 
-# Наивный алгоритм
+# Naive
 def simple_algorithm(timeseries, k)
   result = []
 
@@ -17,7 +17,7 @@ def simple_algorithm(timeseries, k)
   result
 end
 
-# Метод двух указателей
+# 2-pointer
 def tpm_optimized_algorithm(timeseries, k)
   result = []
 

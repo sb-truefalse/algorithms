@@ -1,13 +1,13 @@
 package main
 
-/* 2-SUM */
+/* Two Sum */
 
 import (
 	"fmt"
 	"sort"
 )
 
-// Наивный алгоритм
+// Naive
 func simpleAlgorithm(numbers []int, x int) (int, int) {
 	for i := 0; i < len(numbers); i++ {
 		for j := 0; j < len(numbers); j++ {
@@ -22,7 +22,7 @@ func simpleAlgorithm(numbers []int, x int) (int, int) {
 	return -1, -1
 }
 
-// Метод двух указателей
+//  2-pointer
 func tpmOptimizedAlgorithm(numbers []int, x int) (int, int) {
 	sort.Ints(numbers)
 
@@ -44,7 +44,7 @@ func tpmOptimizedAlgorithm(numbers []int, x int) (int, int) {
 	return -1, -1
 }
 
-// Доп. память (хеш-таблица)
+// Memory+ (hash table)
 func mapOptimizedAlgorithm(numbers []int, x int) (int, int) {
   hsh := make(map[int]int)
 

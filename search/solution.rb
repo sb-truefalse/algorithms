@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
-# Поиск
+# Search
 
-# Линейный поиск
+# Linear
 def linear_algorithm(list, x)
   list.each_with_index { |item, index| return index if x == item }
 
   -1
 end
 
-# Бинарный поиск
+# Binary
 def binary_algorithm(list, x)
   l, r = 0, (list.size - 1)
   list.sort!

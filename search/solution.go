@@ -1,13 +1,13 @@
 package main
 
-/* Поиск */
+/* Search */
 
 import (
 	"fmt"
 	"sort"
 )
 
-// Линейный поиск
+// Linear
 func linearAlgorithm(list []int, x int) int {
 	for i := 0; i < len(list); i++ {
 		if x == list[i] {
@@ -18,7 +18,7 @@ func linearAlgorithm(list []int, x int) int {
 	return -1
 }
 
-// Бинарный поиск
+// Binary
 func binaryAlgorithm(list []int, x int) int {
 	l, r := 0, (len(list) - 1)
 	sort.Ints(list)

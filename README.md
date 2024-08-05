@@ -1,41 +1,41 @@
-# Алгоритмы и структуры данных
+# Algorithms and data structures
 
-## Скользящее среднее
+## Moving average
 
-[Реализация](moving_average)
+[Implementation](moving_average)
 <details>
-  <summary>Оценка</summary>
+  <summary>Performance</summary>
 
-| Метод | Время | Объём памяти |
+| Method | Timetime | Memory |
 | ------ | ----------- | ----------- |
-| Наивный алгоритм | O(N^2) | O(N) |
-| Метод двух указателей | O(N) | O(N) |
+| Naive | O(N^2) | O(N) |
+| 2-pointer | O(N) | O(N) |
 </details>
 
-## 2-SUM
+## Two Sum
 
-[Реализация](2_sum)
+[Implementation](2_sum)
 
 <details>
-  <summary>Оценка</summary>
+  <summary>Performance</summary>
 
-| Метод | Время | Объём памяти |
+| Method | Time | Memory |
 | ------ | ----------- | ----------- |
-| Наивный алгоритм | O(N^2) | O(N) |
-| Метод двух указателей (+ сортировка) | O(N * LOG(N)) | O(N) |
-| Доп. память (хеш-таблица) | O(N) | O(2*N) |
+| Naive | O(N^2) | O(N) |
+| 2-pointer (+sort) | O(N * LOG(N)) | O(N) |
+| Memory+ (hash table) | O(N) | O(2*N) |
 </details>
 
 
-## Поиск
+## Search
 
-[Реализация](search)
+[Implementation](search)
 
 <details>
-  <summary>Оценка</summary>
+  <summary>Performance</summary>
 
-| Метод | Время | Объём памяти |
+| Method | Time | Memory |
 | ------ | ----------- | ----------- |
-| Линейный | O(N^2) | O(N) |
-| Бинарный | O(N*(LOG(N))) | O(N) |
+| Linear | O(N^2) | O(N) |
+| Binary | O(N*(LOG(N))) | O(N) |
 </details>

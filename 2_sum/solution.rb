@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-# 2-SUM
+# 2 Sum
 
-# Наивный алгоритм
+# Naive
 def simple_algorithm(numbers, x)
   (0...numbers.size).each do |i|
     (0...numbers.size).each do |j|
@@ -15,7 +15,7 @@ def simple_algorithm(numbers, x)
   return [nil, nil]
 end
 
-# Метод двух указателей
+# 2-pointer
 def tpm_optimized_algorithm(numbers, x)
   numbers.sort!
 
@@ -37,7 +37,7 @@ def tpm_optimized_algorithm(numbers, x)
   return [nil, nil]
 end
 
-# Доп. память (хеш-таблица)
+# Memory+ (hash table)
 def map_optimized_algorithm(numbers, x)
   map = {}
 

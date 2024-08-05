@@ -1,12 +1,12 @@
 package main
 
-/* Скользящее среднее */
+/* Moving average */
 
 import (
 	"fmt"
 )
 
-// Наивный алгоритм
+// Naive
 func simpleAlgorithm(timeseries []int, k int) []float64 {
 	var result []float64
 
@@ -23,7 +23,7 @@ func simpleAlgorithm(timeseries []int, k int) []float64 {
 	return result
 }
 
-// Метод двух указателей
+// 2-pointer
 func tpmOptimizedAlgorithm(timeseries []int, k int) []float64 {
 	var result []float64
 

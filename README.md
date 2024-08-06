@@ -39,3 +39,17 @@
 | Linear | O(N^2) | O(N) |
 | Binary | O(N*(LOG(N))) | O(N) |
 </details>
+
+
+## Prime numbers
+
+[Implementation](prime_numbers)
+
+<details>
+  <summary>Performance</summary>
+
+| Method | Time | Memory |
+| ------ | ----------- | ----------- |
+| Naive | O(N) | O(1) |
+| Sqrt | O(N^1/2) | O(1) |
+</details>

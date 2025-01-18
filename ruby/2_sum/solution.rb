@@ -12,7 +12,7 @@ def two_sum(numbers, x)
     end
   end
 
-  return [nil, nil]
+  [nil, nil]
 end
 
 # Method: 2-pointer
@@ -20,7 +20,7 @@ def two_sum_with_2_pointers(numbers, x)
   numbers.sort!
 
   i = 0
-  j = numbers.size  - 1
+  j = numbers.size - 1
 
   while i < j
     sum = numbers[i] + numbers[j]
@@ -34,7 +34,7 @@ def two_sum_with_2_pointers(numbers, x)
     end
   end
 
-  return [nil, nil]
+  [nil, nil]
 end
 
 # Method: Hash table
@@ -44,5 +44,5 @@ def two_sum_with_hash(numbers, x)
   numbers.each_with_index { |number, i| map[x - number] = i }
   numbers.each_with_index { |number, i| return [i, map[number]] if map[number] }
 
-  return [nil, nil]
+  [nil, nil]
 end

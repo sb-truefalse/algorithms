@@ -11,7 +11,8 @@ end
 
 # Method: Binary
 def binary_search(list, x)
-  l, r = 0, (list.size - 1)
+  l = 0
+  r = (list.size - 1)
   list.sort!
 
   while l <= r

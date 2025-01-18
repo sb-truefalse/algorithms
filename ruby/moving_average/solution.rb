@@ -23,13 +23,13 @@ def moving_avrg_with_2_pointers(timeseries, k)
 
   sum = 0
   (0...k).each { |i| sum += timeseries[i] }
-  result << sum / k
+  result << (sum * 1.0) / k
 
   (k...timeseries.size).each do |i|
     sum -= timeseries[i - k]
     sum += timeseries[i]
 
-    result << sum / k
+    result << (1.0 * sum) / k
   end
 
   result

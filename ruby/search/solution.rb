@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-# Search
+# Algorithm: Searching for a list item
 
-# Linear
-def linear_algorithm(list, x)
+# Method: Linear
+def linear_search(list, x)
   list.each_with_index { |item, index| return index if x == item }
 
   -1
 end
 
-# Binary
-def binary_algorithm(list, x)
+# Method: Binary
+def binary_search(list, x)
   l, r = 0, (list.size - 1)
   list.sort!
 
@@ -27,12 +27,4 @@ def binary_algorithm(list, x)
   end
 
   -1
-end
-
-
-def test
-	list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-	x = 10
-	puts(linear_algorithm(list, x) == 9)
-	puts(binary_algorithm(list, x) == 9)
 end

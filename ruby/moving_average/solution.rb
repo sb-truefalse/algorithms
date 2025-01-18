@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-# Moving average
+# Algorithm: Moving average
 
-# Naive
-def simple_algorithm(timeseries, k)
+# Method: Naive
+def moving_avrg(timeseries, k)
   result = []
 
   ((k - 1)...timeseries.size).each do |i|
@@ -17,8 +17,8 @@ def simple_algorithm(timeseries, k)
   result
 end
 
-# 2-pointer
-def tpm_optimized_algorithm(timeseries, k)
+# Method: 2-pointer
+def moving_avrg_with_2_pointers(timeseries, k)
   result = []
 
   sum = 0
@@ -33,10 +33,4 @@ def tpm_optimized_algorithm(timeseries, k)
   end
 
   result
-end
-
-def test
-  data = [1, 2, 3, 4, 5, 6]
-  puts simple_algorithm(data, 3)
-  puts tpm_optimized_algorithm(data, 3)
 end

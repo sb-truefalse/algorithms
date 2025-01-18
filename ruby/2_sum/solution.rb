@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-# 2 Sum
+# Algorithm: Two Sum
 
-# Naive
-def simple_algorithm(numbers, x)
+# Method: Naive
+def two_sum(numbers, x)
   (0...numbers.size).each do |i|
     (0...numbers.size).each do |j|
       next if i == j
@@ -15,8 +15,8 @@ def simple_algorithm(numbers, x)
   return [nil, nil]
 end
 
-# 2-pointer
-def tpm_optimized_algorithm(numbers, x)
+# Method: 2-pointer
+def two_sum_with_2_pointers(numbers, x)
   numbers.sort!
 
   i = 0
@@ -37,20 +37,12 @@ def tpm_optimized_algorithm(numbers, x)
   return [nil, nil]
 end
 
-# Memory+ (hash table)
-def map_optimized_algorithm(numbers, x)
+# Method: Hash table
+def two_sum_with_hash(numbers, x)
   map = {}
 
   numbers.each_with_index { |number, i| map[x - number] = i }
   numbers.each_with_index { |number, i| return [i, map[number]] if map[number] }
 
   return [nil, nil]
-end
-
-def test
-	list = [1, 2, 3, 4, 5, 6, 7, 9, 10]
-	x = 5
-	puts simple_algorithm(list, x).join(' ')
-	puts tpm_optimized_algorithm(list, x).join(' ')
-	puts map_optimized_algorithm(list, x).join(' ')
 end

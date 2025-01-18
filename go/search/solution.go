@@ -1,14 +1,14 @@
-package main
+// Algorithm: Searching for a list item
+package algo
 
 /* Search */
 
 import (
-	"fmt"
 	"sort"
 )
 
-// Linear
-func linearAlgorithm(list []int, x int) int {
+// Method: Linear
+func LinearSearch(list []int, x int) int {
 	for i := 0; i < len(list); i++ {
 		if x == list[i] {
 			return i
@@ -18,8 +18,8 @@ func linearAlgorithm(list []int, x int) int {
 	return -1
 }
 
-// Binary
-func binaryAlgorithm(list []int, x int) int {
+// Method: Binary
+func BinarySearch(list []int, x int) int {
 	l, r := 0, (len(list) - 1)
 	sort.Ints(list)
 
@@ -36,14 +36,4 @@ func binaryAlgorithm(list []int, x int) int {
 	}
 
 	return -1
-}
-
-func test() {
-	list := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	x := 10
-	fmt.Println(linearAlgorithm(list, x) == 9)
-	fmt.Println(binaryAlgorithm(list, x) == 9)
-}
-
-func main() {
 }

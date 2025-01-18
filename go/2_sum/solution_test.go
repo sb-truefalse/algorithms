@@ -1,5 +1,5 @@
 // Tests
-package solution
+package algo
 
 import (
 	"testing"
@@ -10,7 +10,7 @@ func TestTwoSum(t *testing.T) {
 	x := 5
 	got1, got2 := TwoSum(list, x)
 	if got1 == -1 && got2 == -1 {
-		t.Errorf("simpleAlgorithm(%#v, %d) = %d %d; want 2 3", list, x, got1, got2)
+		t.Errorf("TwoSum(%#v, %d) = %d %d; want 2 3", list, x, got1, got2)
 	}
 }
 
@@ -19,7 +19,7 @@ func TestTwoSumWith2Pointers(t *testing.T) {
 	x := 5
 	got1, got2 := TwoSumWith2Pointers(list, x)
 	if got1 == -1 && got2 == -1 {
-		t.Errorf("simpleAlgorithm(%#v, %d) = %d %d; want 2 3", list, x, got1, got2)
+		t.Errorf("TwoSumWith2Pointers(%#v, %d) = %d %d; want 2 3", list, x, got1, got2)
 	}
 }
 
@@ -28,6 +28,6 @@ func TestTwoSumWithHash(t *testing.T) {
 	x := 5
 	got1, got2 := TwoSumWithHash(list, x)
 	if got1 == -1 && got2 == -1 {
-		t.Errorf("simpleAlgorithm(%#v, %d) = %d %d; want 2 3", list, x, got1, got2)
+		t.Errorf("TwoSumWithHash(%#v, %d) = %d %d; want 2 3", list, x, got1, got2)
 	}
 }

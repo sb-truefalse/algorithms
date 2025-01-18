@@ -1,13 +1,8 @@
-package main
+// Algorithm: Moving average
+package algo
 
-/* Moving average */
-
-import (
-	"fmt"
-)
-
-// Naive
-func simpleAlgorithm(timeseries []int, k int) []float64 {
+// Method: Naive
+func MovingAvrg(timeseries []int, k int) []float64 {
 	var result []float64
 
 	for i := (k - 1); i < len(timeseries); i++ {
@@ -23,8 +18,8 @@ func simpleAlgorithm(timeseries []int, k int) []float64 {
 	return result
 }
 
-// 2-pointer
-func tpmOptimizedAlgorithm(timeseries []int, k int) []float64 {
+// Method: 2-pointer
+func MovingAvrgWith2Pointers(timeseries []int, k int) []float64 {
 	var result []float64
 
 	sum := 0.0
@@ -40,13 +35,4 @@ func tpmOptimizedAlgorithm(timeseries []int, k int) []float64 {
 	}
 
 	return result
-}
-
-func test() {
-	data := []int{1, 2, 3, 4, 5, 6}
-	fmt.Println(simpleAlgorithm(data, 3))
-	fmt.Println(tpmOptimizedAlgorithm(data, 3))
-}
-
-func main() {
 }

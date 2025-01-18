@@ -1,5 +1,5 @@
 // Algorithm: Two Sum
-package solution
+package algo
 
 import (
 	"sort"

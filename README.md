@@ -1,55 +1,8 @@
-# Algorithms and data structures
+# Алгоритмы и структуры данных
 
-## Moving average
+`ruby` `go`
 
-[Implementation](moving_average)
-<details>
-  <summary>Performance</summary>
-
-| Method | Timetime | Memory |
-| ------ | ----------- | ----------- |
-| Naive | O(N^2) | O(N) |
-| 2-pointer | O(N) | O(N) |
-</details>
-
-## Two Sum
-
-[Implementation](2_sum)
-
-<details>
-  <summary>Performance</summary>
-
-| Method | Time | Memory |
-| ------ | ----------- | ----------- |
-| Naive | O(N^2) | O(N) |
-| 2-pointer (+sort) | O(N * LOG(N)) | O(N) |
-| Memory+ (hash table) | O(N) | O(2*N) |
-</details>
-
-
-## Search
-
-[Implementation](search)
-
-<details>
-  <summary>Performance</summary>
-
-| Method | Time | Memory |
-| ------ | ----------- | ----------- |
-| Linear | O(N^2) | O(N) |
-| Binary | O(N*(LOG(N))) | O(N) |
-</details>
-
-
-## Prime numbers
-
-[Implementation](prime_numbers)
-
-<details>
-  <summary>Performance</summary>
-
-| Method | Time | Memory |
-| ------ | ----------- | ----------- |
-| Naive | O(N) | O(1) |
-| Sqrt | O(N^1/2) | O(1) |
-</details>
+- [Two Sum](2_sum)
+- [Поиск элемента в списке](search)
+- [Поиск простых чисел](prime_numbers)
+- [Скользящая средняя (Moving Average)](moving_average)

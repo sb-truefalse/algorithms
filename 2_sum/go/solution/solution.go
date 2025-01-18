@@ -1,14 +1,12 @@
-package main
-
-/* Two Sum */
+// Algorithm: Two Sum
+package solution
 
 import (
-	"fmt"
 	"sort"
 )
 
-// Naive
-func simpleAlgorithm(numbers []int, x int) (int, int) {
+// Method: Naive
+func TwoSum(numbers []int, x int) (int, int) {
 	for i := 0; i < len(numbers); i++ {
 		for j := 0; j < len(numbers); j++ {
 			if i == j {
@@ -22,8 +20,8 @@ func simpleAlgorithm(numbers []int, x int) (int, int) {
 	return -1, -1
 }
 
-//  2-pointer
-func tpmOptimizedAlgorithm(numbers []int, x int) (int, int) {
+// Method: 2-pointer
+func TwoSumWith2Pointers(numbers []int, x int) (int, int) {
 	sort.Ints(numbers)
 
 	i := 0
@@ -44,9 +42,9 @@ func tpmOptimizedAlgorithm(numbers []int, x int) (int, int) {
 	return -1, -1
 }
 
-// Memory+ (hash table)
-func mapOptimizedAlgorithm(numbers []int, x int) (int, int) {
-  hsh := make(map[int]int)
+// Method: Hash table
+func TwoSumWithHash(numbers []int, x int) (int, int) {
+	hsh := make(map[int]int)
 
 	for i := 0; i < len(numbers); i++ {
 		hsh[x-numbers[i]] = i
@@ -61,15 +59,4 @@ func mapOptimizedAlgorithm(numbers []int, x int) (int, int) {
 	}
 
 	return -1, -1
-}
-
-func test() {
-	list := []int{1, 2, 3, 4, 5, 6, 7, 9, 10}
-	x := 5
-	fmt.Println(simpleAlgorithm(list, x))
-	fmt.Println(tpmOptimizedAlgorithm(list, x))
-	fmt.Println(mapOptimizedAlgorithm(list, x))
-}
-
-func main() {
 }

@@ -7,6 +7,10 @@
 
 name: Ruby CI
 
+defaults:
+  run:
+    working-directory: ./go
+
 on:
   push:
     branches: [ "main" ]

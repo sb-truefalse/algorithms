@@ -9,7 +9,7 @@ name: Ruby CI
 
 defaults:
   run:
-    working-directory: ./go
+    working-directory: ./ruby
 
 on:
   push:

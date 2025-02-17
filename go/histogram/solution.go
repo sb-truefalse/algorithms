@@ -1,7 +1,7 @@
 // Algorithm: Max rectangle area in the histogram
 package algo
 
-// O(n^2), V(n)
+// O(n²), V(n)
 func NaiveSolution(list []int) int {
 	maxArea := 0
 	// On right

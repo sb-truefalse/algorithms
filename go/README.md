@@ -1,7 +1,11 @@
 # Алгоритмы и структуры данных на Go
 
-- [Two Sum](2_sum)
-- [Поиск элемента в списке](search)
-- [Поиск простых чисел](prime_numbers)
-- [Скользящая средняя (Moving Average)](moving_average)
+Структуры данных:
 - [Очередь (Queue)](queue)
+
+Задачи:
+- [Two Sum](2_sum)
+- [Площадь гистограммы](histogram)
+- [Поиск простых чисел](prime_numbers)
+- [Поиск элемента в списке](search)
+- [Скользящая средняя (Moving Average)](moving_average)
